@@ -17,7 +17,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server --port $PORT"
+    "start": "node server --port $PORT",
+    "serve": "nodemon server.js"
   },
   "author": "Pratik Singh Thakur",
   "license": "ISC"
