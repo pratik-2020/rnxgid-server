@@ -38,11 +38,11 @@ const verifyStudent = (req, res) => {
             res.send('User not found');
         }
         else{
-            res.send({
+            res.send([{
                 name: response[0].name,
                 registration_num : reg_num,
                 url : response[0].url
-            });
+            }]);
         }
     })
 }
