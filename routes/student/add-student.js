@@ -36,6 +36,7 @@ const addStudent = (req, res) => {
             encr = encr + reg_num[i]
         }
     }
+    console.log(encr)
     cloudinary.uploader.upload(img.tempFilePath, (err, rslt) => {
         if(err){
             res.send(err.message);
